@@ -2,6 +2,8 @@ html {
   box-sizing: border-box;
   font-family: Georgia, serif;
   line-height: 1.5;
+  color: #2f2d13;
+  background-color: white;
 }
 
 *, *::before, *::after {
@@ -14,37 +16,78 @@ body {
 
 img {
   width: 100%;
+  display: block;
 }
 
 header {
   background-color: #ffe500;
+  text-align: center;
 }
 
-h1, h2 {
+h1 {
   font-family: "Sigmar One", cursive;
   color: #b20953;
-  text-transform: uppercase;
+  margin: 0;
+  font-size: 3rem;
 }
 
-h1, .copyright {
-  background-color: #ffe500;
+h2 {
+  font-family: "Sigmar One";
+  color: #b20953;
+  font-size: 1.875rem;
+}
+
+p {
+  font-family: Georgia;
+  font-size: 1em;
 }
 
 nav a {
   text-decoration: none;
   font-size: 1.125rem;
   display: inline-block;
-  padding: .2em .5em;
+  padding: .2em .5em .3em;
   background-color: #b2a212;
+  color: #fff;
+  margin-bottom: .3em;
+  border-radius: 4px;
 }
 
-.btn {
-  border: 2px solid #333;
-  border-radius: 6px;
-  font-size: 1.2em;
-  padding: .5em;
-  display: inline-block;
+nav ul {
+  text-align: center;
+  margin-top: .1em;
+  margin-bottom: 1.3em;
   list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+}
+
+nav .btn {
+  background-color: #b20953;
+}
+
+main {
+  padding-left: .75em;
+  padding-right: .75em;
+}
+
+nav a:hover {
+  background-color: #cc1465;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+footer {
   background-color: #ffe500;
-  text-decoration: none;
+  border: 2px solid #ffe500;
+  text-align: center;
+  padding: .5em;
 }
